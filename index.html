@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <title align="center">Indian Key Commodities Retail</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles\style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="col-12 text-center">
+        <h1 align="center">18CSE301J-Information Visualization</h1>
+        <h2 align="center">Adarsh Vardhan Singh</h2>
+        <h3 align="center">RA2011003010794</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <div>
+            <li><a href="contact.html">Contact</a></li>
+          </div>
+          <li><a href="#Visualization_Goals">Visualization's Goals</a></li>
+          <li><a href="#Intended_Audience">Intended Audience</a></li>
+          <li><a href="#Data_Source">Data Source</a></li>
+          <li><a href="#Visualization_Design">Visualization Design</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2 align="center">About</h2>
+        <p>
+          Hi, I'm Adarsh Vardhan Singh,I am a third year student of Computer
+          Science and Engineering and enrolled in SRM Institute of Science and
+          Technolog .
+        </p>
+        <p>
+          This project contains Visualization of dataset for Indian Key
+          Commodities Retail.This data was collected from OGD(Open Government
+          Data Platform):-https://data.gov.in/ which happens to be the website
+          home to many other data sets that are linked to the government of
+          India This Dataset contains 846,672 rows and 6 columns and contains
+          the data of prices from 1975 to 2015.
+        </p>
+      </section>
+      <section id="projects">
+        <h2 align="center">Story Telling</h2>
+        <p>
+          The aim of analyzing the Indian retail commodity market could be to
+          gain insights into the current state of the market, including trends,
+          challenges, and opportunities. Some specific goals of such an analysis
+          could include: Understanding consumer behavior : Analyzing the retail
+          commodity market in India could provide insights into consumer
+          behavior, including preferences, buying habits, and spending patterns.
+          This information could help retailers and manufacturers tailor their
+          products and marketing strategies to better meet the needs of Indian
+          consumers. Identifying market trends: Analyzing the Indian retail
+          commodity market could reveal emerging trends and shifts in consumer
+          demand. This information could be useful for retailers and
+          manufacturers who want to stay ahead of the curve and capitalize on
+          new opportunities.
+        </p>
+        <p>
+          Assessing competition: Analyzing the retail commodity market in India
+          could help retailers and manufacturers understand their competition,
+          including their strengths and weaknesses, pricing strategies, and
+          market share. This information could be used to develop competitive
+          pricing strategies and to differentiate products from competitors.
+          Improving supply chain efficiency: Analyzing the Indian retail
+          commodity market could help retailers and manufacturers identify
+          inefficiencies in their supply chains, such as delays in distribution
+          or excess inventory. This information could be used to improve supply
+          chain management and reduce costs.
+        </p>
+        <ul>
+          <li>
+            <h3 align="center">Tableau</h3>
+            <head>
+              <title align="center">Tableau Embed Example</title>
+              <script src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+            </head>
+            <body>
+              <div id="tableauViz"></div>
+
+              <script>
+                function initViz() {
+                  var containerDiv = document.getElementById("tableauViz");
+                  var url =
+                    "https://public.tableau.com/views/Retail_Prices/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link";
+                  var options = {
+                    width: "100%",
+                    height: "800px",
+                    hideTabs: true,
+                    hideToolbar: true,
+                  };
+                  var viz = new tableau.Viz(containerDiv, url, options);
+                }
+                (function () {
+                  var vizInit = setInterval(function () {
+                    if (typeof tableau !== "undefined") {
+                      clearInterval(vizInit);
+                      initViz();
+                    }
+                  }, 10);
+                })();
+              </script>
+            </body>
+          </li>
+          <h4 align="center">Python Visualisations</h4>
+          <div id="projects" class="recent-projects">
+            <div class="recent-projects-title"></div>
+
+            <div class="recent-projects-content content-block-gray">
+              <div id="owl-example" class="owl-carousel">
+                <div>
+                  <img src="Bargraph3.png" alt="" />
+                </div>
+
+                <div>
+                  <img src="scatterplotmatrix.png" alt="" />
+                </div>
+                <div>
+                  <img src="scaatterplot.png" alt="" />
+                </div>
+                <div>
+                  <img src="violinplot.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </section>
+      <section id="Visualization_Goals">
+        <h2 align="center">Visualization's Goals</h2>
+        <p>
+          Analyzing the retail commodity market in India could help retailers and manufacturers understand their competition, including their strengths and weaknesses, pricing strategies, and market share.
+          This information could be used to develop competitive pricing strategies and to differentiate products from competitors.
+        </p>
+        </section>
+        <section id="Intended_Audience">
+          <h2 align="center">Intended Audience</h2>
+          <p>
+            ➡ Retailers and Manufacturers. 
+          </p>
+          <p>
+            ➡ Common People.
+          </p>
+          </section>
+          <section id="Data_Source">
+            <h2 align="center">Data Source</h2>
+            <p>
+              This data was collected from OGD(Open Government Data Platform):-https://data.gov.in/ which happens to be the website home to many other data sets that are linked to the government of India.
+
+            </p>
+            </section>
+            <section id="Visualization_Design">
+              <h2 align="center">Visualization Design</h2>
+              <p>
+                The visualization is a dashboard that shows the Indian retail commodity market to gain insights into the current state of the market, including trends, challenges, and opportunities.
+
+              </p>
+              </section>
+    </main>
+    <footer>
+      <p h3 align="center">Copyright © 2023 AdarshVardhanSingh</p>
+    </footer>
+  </body>
+</html>
